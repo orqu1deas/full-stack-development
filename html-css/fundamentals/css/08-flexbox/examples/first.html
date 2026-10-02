@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 20px 40px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        padding: 40px;
+      }
+
+      .card {
+        flex: 1 1 250px;
+
+        padding: 20px;
+
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h1 class="logo">MyWebsite</h1>
+
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+
+    <main class="cards">
+      <article class="card">
+        <h2>HTML</h2>
+        <p>Defines the structure of a webpage.</p>
+      </article>
+
+      <article class="card">
+        <h2>CSS</h2>
+        <p>Defines the visual presentation of a webpage.</p>
+      </article>
+
+      <article class="card">
+        <h2>JavaScript</h2>
+        <p>Adds logic and interactivity to a webpage.</p>
+      </article>
+    </main>
+  </body>
+</html>
